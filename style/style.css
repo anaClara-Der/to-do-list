@@ -1,0 +1,97 @@
+:root{
+    --back:#ee9ca7;
+    --back-two:#ffdde1;
+    --white: #ffffff;
+    --shadow: rgba(0,0,0,0.75);
+    --card: #CD5C5C;
+    --done: #7CFC00;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+body{
+    background: #ee9ca7;
+    background: -webkit-linear-gradient(to right, var(--back-two) var(--back));  
+    background: linear-gradient(to right, var(--back-two), var(--back)); 
+}
+/*Fehca de la parte superior*/
+#fecha{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+/*Tarjeta para escribir*/
+#container{
+    width: 100vw;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listado{
+    width: 90%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 10px 10px 26px -4px var(--shadow);  
+}
+.listado-titulo{
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+    border-bottom: solid 2px var(--card); 
+}
+.color-label{
+    font-size: 10px;
+    margin: 10px 5px;
+}
+#texterea{
+    width: 80%;
+    height: 8em;
+    padding: 10px;
+}
+.boton-listado{
+    width: 80%;
+    height: 4em;
+    display: inline-block;
+    margin: 15px auto 20px auto;
+    font-size: 1em;
+    cursor: pointer;
+}
+/*Tarjeta de tareas por hacer*/
+.tareas-hacer{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    background-color: var(--card);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+/*Lista de tareas que aparece al agregar una tarea*/
+.tareasDecoracion{
+    list-style: none;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 10px 10px 26px -4px var(--shadow);
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*Circulo de check*/
+.hecho{
+    background-color: var(--done);
+    border-radius: 60px;
+}
+

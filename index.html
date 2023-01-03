@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/desktop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="fecha"></h1>
+    <main id="container">
+        <form id="listado">
+            <h2 class="listado-titulo">Tareas</h2>
+            <label class= "color-label"for="color">Agrega color a tu nota si lo deseas 
+                <input type="color" id="color" value="#FFF8DC">
+            </label>
+         
+            <textarea  id="textarea" cols="30" rows="10" placeholder="Escribir tarea"></textarea>
+            <button type="submit" class="boton-listado">Agregar tarea</button>
+        </form>
+
+        <div class="tareas-hacer">
+           <ul class="tareas-hacer-ul">
+          
+           </ul>
+        </div>
+    </main>
+
+    <template id="tareas-template">
+        <li class="tareasDecoracion">
+            <i class="circulo far fa-circle" role="button"></i> 
+            <p></p>
+            <i class="borrar far fa-trash-alt" role="button"></i> 
+        </li>
+    </template>
+    
+    
+    <script src="https://kit.fontawesome.com/d9e2ae4403.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,6 +1,9 @@
 # to-do-list 📝
 
-Al ingresar una nueva tarea se puede seleccionar el color que tendrá esa tarea, lo que permite separar por colores tareas del trabajo, recreación, etc. 
+-A cada tarea escritra se le puede adjudicar un color 
 
-🟢 Las tareas hechas se pueden marcar haciendo click sobre el círculo que se volverá de color  verde. 
-🗑️ Si se  quiere eliminar la tarea se aprieta el cesto de basura.  
+-Las tareas tienen la opcion de ser marcadas con un tile vere o ser borradas 
+
+Link: https://anaclara-der.github.io/to-do-list/
+
+

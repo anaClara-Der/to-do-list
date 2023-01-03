@@ -91,7 +91,9 @@ body{
 }
 /*Circulo de check*/
 .hecho{
+    height: 15px;
+    width: 15px;
     background-color: var(--done);
-    border-radius: 60px;
+    border-radius: 50%;
 }
 

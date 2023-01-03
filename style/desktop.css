@@ -1,7 +1,8 @@
 @media (min-width: 1024px){
     /*Tarjeta para escribir*/
     #container{
-        margin: 50px;
+        width: 90%;
+        margin: 50px auto;
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -19,6 +20,6 @@
 /*Tarjeta de tareas por hacer*/
     .tareas-hacer{
         width: 40%;
-       
+        margin: 20px 0px;
     }
 }

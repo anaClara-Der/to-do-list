@@ -1,6 +1,8 @@
+
 //Agrupa todas las funciones de la pagina
 const accionPagina = () =>{
   tituloFecha();
+  
   //Escribir la tarea
   const form = document.getElementById("listado");
   form.addEventListener("submit", (e) => {
@@ -11,8 +13,8 @@ const accionPagina = () =>{
 
 //Las tareas escritas se pasan para que queden escritas
 const tarjetaTareas = () =>{
-  let hacerTareas = [];
   let textarea = document.querySelector("#textarea");
+  let hacerTareas = [];
   let color = document.querySelector("#color"); 
   let tareasHacerUl = document.querySelector(".tareas-hacer-ul");
   const form = document.getElementById("listado");
@@ -21,8 +23,8 @@ const tarjetaTareas = () =>{
 
    if (textarea.value) { //Lee si se ingreso un valor 
      hacerTareas.push(textarea.value);
-
      hacerTareas.forEach((item) => {
+      
        const clone = template.cloneNode(true);
 
        clone.querySelector("p").textContent = item; //Se guarda el valor del texto ingresado
@@ -34,13 +36,15 @@ const tarjetaTareas = () =>{
        clone.querySelector(".borrar").addEventListener("click", function () {
          this.parentElement.remove(); //Borra la tarea
        });
-       
+
        fragmen.appendChild(clone);
      });
      tareasHacerUl.appendChild(fragmen);
    }
    form.reset();
 }
+
+
 
 //Fecha cabezera
 function tituloFecha() {
